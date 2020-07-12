@@ -1,7 +1,13 @@
 docs:
 - title: Home
-  url: /
+  url: home
 - title: Sobre
   url: about
-- title: Deployment
-  url: deployment
+- title: Funcionalidades
+  url: features
+- title: App
+  url: app
+- title: Preço
+  url: princing
+- title: Contato
+  url: contact

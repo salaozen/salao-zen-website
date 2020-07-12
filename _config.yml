@@ -18,22 +18,34 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Salão Zen - Plataforma de agendamentos on-line
+author: Salão Zen Desenvolvimento de Sistemas
+generator: Salão Zen Desenvolvimento de Sistemas
+lang: pt_BR
+description: >-
+  O Salão Zen é uma plataforma para gestão completa para salões, estéticas, barbearias e/ou qualquer estabelecimento que necessite controlar seus agendamentos.
+keywords: >-
+  Salão Zen, salaozen, salaozenapp, La Máfia Barbearia, App La Máfia, sistema salão, sistema barbearia, sistema estéticas, sistema de agendamento online, Salao Vip, salaovip, Awec, avecbrasil, Beauty Date, beautydate, AppBarber, appbarber
+social:
+  name: Salão Zen
+  links:
+    - https://www.facebook.com/salaozenapp
+    - https://www.instagram.com/salaozenapp/
+    - https://twitter.com/salaozenapp
+    - https://www.linkedin.com/company/salaozenapp/
+    - https://github.com/salaozen
+
+url: "https://www.salaozen.com.br"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 
 permalink: :slug
-# Build settings
-theme: minima
+theme: jekyll-theme-minimal
+
+sass:
+  sass_dir: _sass
+
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.

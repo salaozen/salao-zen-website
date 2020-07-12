@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 
-gem "minima", "~> 2.5"
+# gem "minima", "~> 2.5"
+gem 'jekyll-theme-minimal'
 
 group :jekyll_plugins do
   gem 'github-pages'
-  gem 'jekyll-feed', '~> 0.12'
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
 end

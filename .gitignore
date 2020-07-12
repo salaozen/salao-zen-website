@@ -10,3 +10,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# NPM
+node_modules/
+jspm_packages/

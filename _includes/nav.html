@@ -1,14 +1,19 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="/">Racks</a>
+      <a class="navbar-brand" href="/index">
+        <div class="navbar-brand-img">
+          <img src="assets/images/logo.png" style="max-width: 100px; height: auto;" class="animate" alt="">
+        </div>
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
+          {% assign current = page.url | downcase | split: '/' %}
           {% for item in site.data.pages.docs %}
-            <li class="nav-item active"><a href="{{ item.url }}" class="nav-link">{{ item.title }}</a></li>
+            <li class="nav-item {% if current[1] == item.url %}active{% endif %}"><a href="{{ item.url }}" class="nav-link">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
