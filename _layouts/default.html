@@ -31,8 +31,7 @@
 <body>
     {% include nav.html %}
 
-    {% assign current = page.url | downcase | split: '/' %}
-    {% if current[1] == "home" or current[1] == "" %}
+    {% if page.url == "/" or current[1] == "" %}
       {% include header-home.html %}
     {% else %}
       {% include header.html %}

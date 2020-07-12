@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="/home">
+      <a class="navbar-brand" href="./">
         <div class="navbar-brand-img">
           <img src="assets/images/logo.png" style="max-width: 100px; height: auto;" class="animate" alt="">
         </div>
@@ -11,9 +11,10 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          {% assign current = page.url | downcase | split: '/' %}
+          {% assign current_url = page.url | downcase | replace: './', '' | replace: '/', '' %}
           {% for item in site.data.pages.docs %}
-            <li class="nav-item {% if current[1] == item.url %}active{% endif %}"><a href="{{ item.url }}" class="nav-link">{{ item.title }}</a></li>
+            {% assign item_url = item.url | replace: './', '' %}
+            <li class="nav-item {% if current_url == item_url %}active{% endif %}"><a href="{{ item.url }}" class="nav-link">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
       </div>

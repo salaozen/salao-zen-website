@@ -1,6 +1,6 @@
 docs:
 - title: Home
-  url: home
+  url: ./
 - title: Sobre
   url: about
 - title: Funcionalidades
