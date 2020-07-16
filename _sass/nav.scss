@@ -171,3 +171,11 @@
   -webkit-transition: all 3s;
   transition: all 3s;
 }
+
+.nav-flags {
+  display: flex;
+
+  img {
+    width: 1.5em;
+  }
+}
