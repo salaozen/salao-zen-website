@@ -52,7 +52,11 @@ sass:
   sass_dir: _sass
 
 plugins:
+  - jekyll-multiple-languages-plugin
   - jekyll-seo-tag
+
+languages: ["pt", "en", "es"]
+exclude_from_localizations: ["javascript", "images", "css"]
 
 # Exclude from processing.
 # The following items will not be processed, by default.

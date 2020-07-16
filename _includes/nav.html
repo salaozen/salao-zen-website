@@ -12,10 +12,12 @@
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
           {% assign current_url = page.url | downcase | replace: './', '' | replace: '/', '' %}
-          {% for item in site.data.pages.docs %}
-            {% assign item_url = item.url | replace: './', '' %}
-            <li class="nav-item {% if current_url == item_url %}active{% endif %}"><a href="{{ item.url }}" class="nav-link">{{ item.title }}</a></li>
-          {% endfor %}
+          <li class="nav-item {% if current_url == '' %}active{% endif %}"><a href="./" class="nav-link">{% t menu.home %}</a></li>
+          <li class="nav-item {% if current_url == 'about' %}active{% endif %}"><a href="about" class="nav-link">{% t menu.about %}</a></li>
+          <li class="nav-item {% if current_url == 'features' %}active{% endif %}"><a href="features" class="nav-link">{% t menu.features %}</a></li>
+          <li class="nav-item {% if current_url == 'app' %}active{% endif %}"><a href="app" class="nav-link">{% t menu.app %}</a></li>
+          <li class="nav-item {% if current_url == 'pricing' %}active{% endif %}"><a href="pricing" class="nav-link">{% t menu.pricing %}</a></li>
+          <li class="nav-item {% if current_url == 'contact' %}active{% endif %}"><a href="contact" class="nav-link">{% t menu.contact %}</a></li>
         </ul>
       </div>
     </div>
