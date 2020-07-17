@@ -126,13 +126,15 @@
 					sd = $('.js-scroll-wrap');
 
 			if (st > 150) {
-        $('.navbar-brand-img img').attr('src','assets/images/logo-green.png');
+        var logo = $('.navbar-brand-img img').attr('src').replace('logo.png', 'logo-green.png');
+        $('.navbar-brand-img img').attr('src', logo)
 				if ( !navbar.hasClass('scrolled') ) {
 					navbar.addClass('scrolled');	
 				}
 			} 
 			if (st < 150) {
-        $('.navbar-brand-img img').attr('src','assets/images/logo.png');
+        var logo = $('.navbar-brand-img img').attr('src').replace('logo-green.png', 'logo.png');
+        $('.navbar-brand-img img').attr('src', logo);
 				if ( navbar.hasClass('scrolled') ) {
 					navbar.removeClass('scrolled sleep');
 				}

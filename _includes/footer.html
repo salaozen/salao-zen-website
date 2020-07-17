@@ -43,7 +43,7 @@
 
     <div class="row reserved-rights">
       <div class="col">
-        <img src="assets/images/logo.png" class="img-fluid" alt="">
+        <img src="{{ "/assets/images/logo.png" | prepend: site.baseurl_root }}" class="img-fluid" alt="">
       </div>
       <div class="col text-right">
         <p>&copy;<script>document.write(new Date().getFullYear());</script> {% translate footer.copyright %}</p>
