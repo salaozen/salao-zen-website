@@ -2,7 +2,7 @@ footer:
   about: Sobre
   careers: Carreiras
   copyright: Direitos Reservados
-  description: O Salão Zen é uma plataforma para gestão completa para salões, barbearias, estéticas, clínicas e/ou qualquer estabelecimento que necessite controlar seus agendamentos.
+  description: 'O Salão Zen é uma plataforma para gestão completa para salões, barbearias, estéticas, clínicas e/ou qualquer estabelecimento que necessite controlar seus agendamentos.'
   follow: Siga o Salão Zen
   help: Central de ajuda
   solutions: Soluções
@@ -11,11 +11,19 @@ menu:
   about: Sobre
   app: App
   contact: Contato
+  en: Inglês
+  es: Espanhol
   features: Funcionalidades
   home: Home
   pricing: Preço
+  pt: Português
 pages:
+  about:
+    title: Sobre o Salão Zen
+  contact:
+    title: Fale Conosco
   home:
-    header: Uma plataforma completa para gerir e otimizar todo funcionamento do seu estabelecimento, desde o agendamento até o pagamento das comissões dos profissionais, passando pela gestão dos serviços/produtos, estoque, formas de pagamento, caixas e muito mais.
+    header: 'Uma plataforma completa para gerir e otimizar todo funcionamento do seu estabelecimento, desde o agendamento até o pagamento das comissões dos profissionais, passando pela gestão dos serviços/produtos, estoque, formas de pagamento, caixas e muito mais.'
+    title: Home
     typewrite: Perfeito para
     typewrites: '[ "Salões", "Barbearias", "Estéticas", "Clínicas" ]'

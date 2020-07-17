@@ -11,10 +11,17 @@ menu:
   about: Sobre
   app: App
   contact: Contacto
+  en: Inglés
+  es: Español
   features: Caracteristicas
   home: Home
   pricing: Precios
+  pt: Portugués
 pages:
+  about:
+    title: Sobre o Salão Zen
+  contact:
+    title: Hable conosotros
   home:
     header: 'Una plataforma completa para administrar y optimizar toda la operación de su establecimiento, desde la programación hasta el pago de las comisiones de los profesionales, pasando por la administración de servicios y productos, inventario, métodos de pago, cajeros y más.'
     typewrite: Perfecto para
