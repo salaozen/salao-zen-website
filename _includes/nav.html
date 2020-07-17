@@ -13,16 +13,28 @@
         <ul class="navbar-nav ml-auto">
           {% assign current_url = page.url | downcase | replace: './', '' | replace: '/', '' %}
           <li class="nav-item {% if current_url == '' %}active{% endif %}"><a href="./" class="nav-link">{% translate menu.home %}</a></li>
-          <!--li class="nav-item {% if current_url == 'about' %}active{% endif %}"><a href="about" class="nav-link">{% translate menu.about %}</a></li>
+          <li class="nav-item {% if current_url == 'about' %}active{% endif %}"><a href="about" class="nav-link">{% translate menu.about %}</a></li>
           <li class="nav-item {% if current_url == 'features' %}active{% endif %}"><a href="features" class="nav-link">{% translate menu.features %}</a></li>
           <li class="nav-item {% if current_url == 'app' %}active{% endif %}"><a href="app" class="nav-link">{% translate menu.app %}</a></li>
-          <li class="nav-item {% if current_url == 'pricing' %}active{% endif %}"><a href="pricing" class="nav-link">{% translate menu.pricing %}</a></li-->
+          <li class="nav-item {% if current_url == 'pricing' %}active{% endif %}"><a href="pricing" class="nav-link">{% translate menu.pricing %}</a></li>
           <li class="nav-item {% if current_url == 'contact' %}active{% endif %}"><a href="contact" class="nav-link">{% translate menu.contact %}</a></li>
-          <li class="nav-item nav-flags">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="flag-icon flag-icon-{{ site.lang | downcase | replace: 'en', 'us' | replace: 'pt', 'br' }}"> </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdown09">
+                <a class="dropdown-item" href="{{page.url}}"><span class="flag-icon flag-icon-br"> </span>  Português</a>
+                <a class="dropdown-item" href="/en{{page.url}}"><span class="flag-icon flag-icon-us"> </span>  Inglês</a>
+                <a class="dropdown-item" href="/es{{page.url}}"><span class="flag-icon flag-icon-es"> </span>  Espanhol</a>
+            </div>
+          </li>
+
+          <!--li class="nav-item nav-flags">
             <a href="{{page.url}}" class="nav-link {% if site.lang == 'pt' %} d-none {% endif %}"><img src="assets/images/pt-br.svg"/></a>
             <a href="/en{{page.url}}" class="nav-link {% if site.lang == 'en' %} d-none {% endif %}"><img src="assets/images/en-us.svg"/></a>
             <a href="/es{{page.url}}" class="nav-link {% if site.lang == 'es' %} d-none {% endif %}"><img src="assets/images/es-es.svg"/></a>
-          </li>
+          </li-->
         </ul>
       </div>
     </div>
