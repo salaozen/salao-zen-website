@@ -7,6 +7,9 @@ footer:
   help: Centro de ayuda
   solutions: Soluciones
   who_we_are: Quienes somos
+form:
+  is_required: es requerido
+  valid: válido
 menu:
   about: Sobre
   app: App
@@ -21,8 +24,17 @@ pages:
   about:
     title: Sobre o Salão Zen
   contact:
+    button: Enviar
+    company: Empresa
+    email: E-mail
+    message: Mensage
+    name: Nombre
+    phone: Teléfono
+    success: '¡Gracis por tu coctato!<br/><br/>Pronto volveremos a ti.'
     title: Hable conosotros
   home:
+    contact_button: Conocer Salão Zen
     header: 'Una plataforma completa para administrar y optimizar toda la operación de su establecimiento, desde la programación hasta el pago de las comisiones de los profesionales, pasando por la administración de servicios y productos, inventario, métodos de pago, cajeros y más.'
+    title: Home
     typewrite: Perfecto para
     typewrites: '[ "Salones", "Peluquerías", "Estética", "Clínicas" ]'

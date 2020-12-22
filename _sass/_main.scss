@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5,
 		content: '';
 	   position: absolute;
 	   left: 0;
-	   bottom: -50px;
+	   bottom: -60px;
 		overflow: visible;
 		width: 100%;
 		height: 120px;
@@ -229,10 +229,10 @@ h1, h2, h3, h4, h5,
 
 //FEATURED SLIDER
 .ftco-section-featured {
-	margin-top: -250px;
+	margin-top: -180px;
 	padding-bottom: 7em;
 	.container {
-		// z-index: 0;
+		z-index: 100;
 		position: relative;
 		.owl-carousel .owl-stage-outer{
 			padding-bottom: 2em;
@@ -1330,22 +1330,6 @@ textarea.form-control {
 	}
 }
 
-.contact-section {
-	.container{
-		padding: 30px;
-		@include media-breakpoint-up(md) {
-			padding: 70px;
-		}
-	}
-	.contact-info{
-		p{
-			a{
-				color: lighten($black,10%);
-			}
-			span{}
-		}
-	}
-}
 .block-9 {
 
 	.form-control {
