@@ -28,7 +28,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
-    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
     <link rel="stylesheet" href="/salao-zen-website/assets/css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="/salao-zen-website/assets/css/animate.css" />
     <link rel="stylesheet" href="/salao-zen-website/assets/css/owl.carousel.min.css" />
@@ -76,10 +77,10 @@
         <ul class="navbar-nav ml-auto">
           
           <li class="nav-item "><a href="./" class="nav-link">Home</a></li>
-          <li class="nav-item "><a href="about" class="nav-link">About Us</a></li>
+          <!--li class="nav-item "><a href="about" class="nav-link">About Us</a></li>
           <li class="nav-item "><a href="features" class="nav-link">Features</a></li>
           <li class="nav-item "><a href="app" class="nav-link">App</a></li>
-          <li class="nav-item "><a href="pricing" class="nav-link">Pricing</a></li>
+          <li class="nav-item "><a href="pricing" class="nav-link">Pricing</a></li-->
           <li class="nav-item active"><a href="contact" class="nav-link">Contact</a></li>
 
           <li class="nav-item dropdown">
@@ -121,7 +122,42 @@
 
     
     
-    
+    <section class="ftco-section contact-section">
+  <div class="container bg-light">
+    <div class="row block-9">
+      <div class="col-md-12 pr-md-12">
+        <div id="success" class="d-none"><h1>Thanks for contact us!<br/><br/>We will be returning as soon as posible to you</h1></div>
+        <form id="gform" action="https://script.google.com/macros/s/AKfycbwm6tGIRNkXK6qyFANr3O0bR2VFPIcHhzkafnha/exec" method="POST">
+          <div class="row">
+            <div class="form-group col-md-6 pr-md-6 validate-input" data-validate="Name is required">
+              <input type="text" class="form-control" name="name" placeholder="Name">
+            </div>
+            <div class="form-group col-md-6 pr-md-6 validate-input" data-validate="E-mail is required">
+              <input type="text" class="form-control" name="email" placeholder="E-mail">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6 pr-md-6 validate-input" data-validate="Phone valid is required">
+              <input type="text" class="form-control" name="phone" placeholder="Phone">
+            </div>
+            <div class="form-group col-md-6 pr-md-6 validate-input" data-validate="Company is required">
+              <input type="text" class="form-control" name="organization" placeholder="Company">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 pr-md-12 validate-input" data-validate="Message is required">
+              <textarea id="" cols="30" rows="7" class="form-control" name="message" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Conhecer o Salão Zen" class="btn btn-primary py-3 px-5">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
     <footer class="ftco-footer ftco-bg-dark ftco-section">
   <div class="container">
     <div class="row mb-5">
@@ -136,13 +172,13 @@
         <div class="ftco-footer-widget mb-4">
           <h2 class="ftco-heading-2">About</h2>
           <ul class="list-unstyled">
-              <li><a href="about" class="py-2 d-block">Who we are</a></li>
+              <!--li><a href="about" class="py-2 d-block">Who we are</a></li-->
               <li><a href="https://www.linkedin.com/company/salaozenapp/jobs/" target="_blank" class="py-2 d-block">Careers</a></li>
-              <li><a href="https://salaozen.freshdesk.com/" target="_blank" class="py-2 d-block">Help Center</a></li>
+              <li><a href="http://suporte.salaozen.com.br" target="_blank" class="py-2 d-block">Help Center</a></li>
           </ul>
         </div>
       </div>
-      <div class="col-md-2">
+      <!--div class="col-md-2">
         <div class="ftco-footer-widget mb-4">
           <h2 class="ftco-heading-2">Solutions</h2>
           <ul class="list-unstyled">
@@ -151,7 +187,7 @@
               <li><a href="pricing" class="py-2 d-block">Pricing</a></li>
           </ul>
         </div>
-      </div>
+      </div-->
       <div class="col-md">
         <div class="ftco-footer-widget mb-4">
           <h2 class="ftco-heading-2">Follow Us</h2>
@@ -203,6 +239,21 @@
     <script src="/salao-zen-website/assets/js/bootstrap-datepicker.js"></script>
     <script src="/salao-zen-website/assets/js/jquery.timepicker.min.js"></script>
     <script src="/salao-zen-website/assets/js/main.js"></script>
+    <script src="/salao-zen-website/assets/js/contact.js"></script>
+    <script src="/salao-zen-website/assets/js/agile-min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127257196-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-127257196-1');
+    </script>
+    <script type="text/javascript">
+      _agile.set_account('ekggos6nv4h9fsfg0kn3rdj51f', 'salaozen');
+      _agile.track_page_view();
+      _agile_execute_web_rules();
+    </script>
 </body>
 
 </html>

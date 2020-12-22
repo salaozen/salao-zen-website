@@ -2412,10 +2412,10 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 { line-height: 1.5; color: #404044; 
 .btn.btn-outline-white:hover, .btn.btn-outline-white:focus, .btn.btn-outline-white:active { background: #fff; border-color: #fff; color: #404044; }
 
 .ftco-degree-bg { position: relative; }
-.ftco-degree-bg:after { content: ''; position: absolute; left: 0; bottom: -50px; overflow: visible; width: 100%; height: 120px; z-index: 0; -webkit-transform: skewY(4deg); -moz-transform: skewY(4deg); -ms-transform: skewY(4deg); -o-transform: skewY(4deg); transform: skewY(4deg); background-color: #fff; }
+.ftco-degree-bg:after { content: ''; position: absolute; left: 0; bottom: -60px; overflow: visible; width: 100%; height: 120px; z-index: 0; -webkit-transform: skewY(4deg); -moz-transform: skewY(4deg); -ms-transform: skewY(4deg); -o-transform: skewY(4deg); transform: skewY(4deg); background-color: #fff; }
 
-.ftco-section-featured { margin-top: -250px; padding-bottom: 7em; }
-.ftco-section-featured .container { position: relative; }
+.ftco-section-featured { margin-top: -180px; padding-bottom: 7em; }
+.ftco-section-featured .container { z-index: 100; position: relative; }
 .ftco-section-featured .container .owl-carousel .owl-stage-outer { padding-bottom: 2em; }
 .ftco-section-featured .container .carousel img { border: 1px solid #f4f4f5; }
 
@@ -2653,10 +2653,6 @@ textarea.form-control { height: inherit !important; }
 .block-4 .nonloop .owl-dots .owl-dot { display: inline-block; width: 8px; height: 8px; background: #ccc; border-radius: 50%; margin-right: 10px; margin-bottom: 10px; transition: .3s all ease; }
 .block-4 .nonloop .owl-dots .owl-dot.active { background: #1fb299; }
 
-.contact-section .container { padding: 30px; }
-@media (min-width: 768px) { .contact-section .container { padding: 70px; } }
-.contact-section .contact-info p a { color: #59595e; }
-
 .block-9 .form-control { outline: none !important; box-shadow: none !important; font-size: 15px; }
 
 .block-21 .blog-img { display: block; height: 80px; width: 80px; }
@@ -2831,3 +2827,21 @@ textarea.form-control { height: inherit !important; }
 .ftco-media.ftco-media-shadow:hover, .ftco-media.ftco-media-shadow:focus { top: -3px; box-shadow: 0 10px 70px -15px rgba(0, 0, 0, 0.3); }
 .ftco-media .icon { font-size: 50px; display: block; color: #1fb299; }
 .ftco-media.text-center .ftco-icon { margin: 0 auto; }
+
+.contact-section { padding-top: 0px; }
+.contact-section .container { padding: 30px; }
+@media (min-width: 768px) { .contact-section .container { padding: 70px; } }
+.contact-section .contact-info p a { color: #59595e; }
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+.validate-input { position: relative; }
+
+.alert-validate::before { content: attr(data-validate); position: absolute; max-width: 70%; background-color: #fff; border: 1px solid #c80000; border-radius: 2px; padding: 4px 30px 4px 10px; bottom: calc((100% - 0px) / 2); -webkit-transform: translateY(50%); -moz-transform: translateY(50%); -ms-transform: translateY(50%); -o-transform: translateY(50%); transform: translateY(50%); right: 40px; pointer-events: none; color: #c80000; font-size: 14px; line-height: 1.4; text-align: left; visibility: hidden; opacity: 0; -webkit-transition: opacity 0.4s; -o-transition: opacity 0.4s; -moz-transition: opacity 0.4s; transition: opacity 0.4s; }
+
+.alert-validate::after { content: "\f06a"; font-family: FontAwesome; display: block; position: absolute; color: #c80000; font-size: 18px; bottom: calc((100% - 0px) / 2); -webkit-transform: translateY(50%); -moz-transform: translateY(50%); -ms-transform: translateY(50%); -o-transform: translateY(50%); transform: translateY(50%); right: 20px; }
+
+.alert-validate:hover:before { visibility: visible; opacity: 1; }
+
+@media (max-width: 992px) { .alert-validate::before { visibility: visible; opacity: 1; } }
+.true-validate::after { content: "\f26b"; font-family: Material-Design-Iconic-Font; font-size: 22px; color: #00ad5f; display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; align-items: center; justify-content: center; position: absolute; bottom: calc((100% - 25px) / 2); -webkit-transform: translateY(50%); -moz-transform: translateY(50%); -ms-transform: translateY(50%); -o-transform: translateY(50%); transform: translateY(50%); right: 5px; }
